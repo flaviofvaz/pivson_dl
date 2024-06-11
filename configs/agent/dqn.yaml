@@ -1,0 +1,15 @@
+exploration_rate: 1.0
+exploration_rate_decay: 0.0000009
+exploration_rate_min: 0.1
+batch_size: 32
+gamma: 0.99
+replay_memory_size: 1000000
+use_bias: True
+loss_fn: "Huber"
+clip_gradient: False
+sync_steps: 10000
+train_every_n_steps: 4
+burn_in: 50000
+error_bound: 1.0
+weights: "truncated_uniform"
+bias: 0.0

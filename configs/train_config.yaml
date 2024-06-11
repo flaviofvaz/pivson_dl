@@ -1,0 +1,12 @@
+training:
+  seed: 1
+  train_steps: 10000000
+  burn_in_steps: 50000
+  test_frequency: 250000
+  test_steps: 135000
+  report_frequency: 10000
+environment: ???
+defaults:
+  - environment: atari
+  - agent: dqn
+  - optimizer: rmsprop

@@ -1,0 +1,14 @@
+environment_id: "SpaceInvaders"
+use_grayscale: True
+frame_stack: 4
+render_mode: "rgb_array"
+no_op_max: 30
+frame_skip: 4
+screen_size: 84
+end_on_life_loss: False
+grayscale: True
+max_episode_steps: 108000
+full_action_space: False
+scale_obs: False
+max_reward: 1.0
+discount_reward: 0.99

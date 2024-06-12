@@ -114,16 +114,16 @@ def train(cfg: DictConfig) -> None:
                 best_r = mean
                 best_agent = agent.get_agent()
                 
-        print("Training done. Saving agent...")
-        print()
+    print("Training done. Saving agent...")
+    print()
 
-        # Save agent
-        filepath = os.path.join(save_dir, "best_agent.pth")
-        torch.save(best_agent, filepath)
-        print("Agent saved.")
-        print()
+    # Save agent
+    filepath = os.path.join(save_dir, "best_agent.pth")
+    torch.save(best_agent, filepath)
+    print("Agent saved.")
+    print()
 
-        env.close()
+    env.close()
 
 
 @torch.no_grad()
